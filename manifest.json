@@ -1,0 +1,20 @@
+{
+  "name": "Weather App",
+  "short_name": "SmashiT",
+  "description": "get weather info. about the event.",
+  "start_url": "index.html",
+  "scope": "index.html",
+  "background_color": "#FFF",
+  "theme_color": "#0175FF",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "icons/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

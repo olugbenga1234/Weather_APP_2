@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.search-location button {
+    line-height: initial;
+}
+
+.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.wind_d {
+    background: url('/icons/wind.png');
+    height: 20px;
+    width: 20px;
+
+    /* Other styles here */
+}
+
+.humidity_d {
+    background: url('/icons/humidity.png');
+    height: 20px;
+    width: 20px;
+
+    /* Other styles here */
+}
+
+.celsius_d {
+    background: url('/icons/celsius.png');
+    height: 20px;
+    width: 20px;
+
+    /* Other styles here */
+}
+
+.ii {
+    margin-bottom: 25px;
+
+}
+
+.form input,
+.s {
+    display: inline !important;
+}
+
+
+.s {
+    border-radius: 10px 0px 0px 10px !important;
+    border: none !important;
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f1f1f1;
+    color: #707070;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.title {
+    color: #fff;
+    font-weight: 700;
+}
+
+.red{
+    color: red;
+}
+
+.sub {
+    color: #e7e4e4;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+.card-body {
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back-card {
+    border-radius: 10px !important;
+    border: none;
+}
+
+.card-bottom {
+    line-height: .5rem;
+}
+
+.container {
+    max-width: 400px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.city {
+    line-height: 5px;
+    color: #222;
+}
+
+.city-name p {
+    font-weight: bold;
+    color: #222;
+    font-size: 1.5rem;
+}
+
+.daynight,
+.country {
+    color: gray;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.daynight {
+    margin-top: -10px !important;
+}
+
+.temp {
+    color: #222;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 3px 5px 2px gray;
+}
+
+.summary {
+    color: gray;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.card-bottom span {
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.card-bottom p {
+    font-weight: 400;
+}
+
+.v-divider {
+    border-radius: 20px;
+    border-left: .1px solid rgb(192, 185, 185);
+}
+
+.h-divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: .1px;
+    width: 100%;
+    display: initial;
+    border-top: .1px solid rgb(192, 185, 185);
+}
+
+#footer {
+    position: unset;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+    font-size: .7rem;
+    color: #fff;
+}
+
+.heart {
+    color: red;
+}
+
+.btn-search {
+    border-radius: 0px 10px 10px 0px !important;
+    border: none !important;
+    /* width: 100%; */
+    height: calc(1.5em + .75rem + 12px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e60000;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.btn-search:hover {
+    color: #fff;
+    background: #e60000;
+    box-shadow: 20px 20px 60px #c40000,
+        -20px -20px 60px #ff0000;
+}
+
+
+/**theme google autofill**/
+.pac-container {
+    border: 1px #0163d9 !important;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: none;
+}
+
+
+
+dd.sunny {
+    background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+}
+dd.cloudy {
+    background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+}
+dd.rainy {
+    background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}
