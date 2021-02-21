@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+
+    
+
+    <link rel="icon" href="icons/logo.png" type="image/gif" sizes="16x16" />
+    <meta charset="UTF-8" />
+
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="js/auto_complete.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet/less" href="css/bg.less" />
+  </head>
+</html>
+
+<body class="area">
+  <div class="container">
+    <div class="container my-5">
+      <h1 class="text-center title pt-5">Smash<span class="red">iT</span>.</h1>
+      <p class="text-center sub">get weather info. about the event.</p>
+      <form class="search-location" id="search-location">
+        <div class="form-group">
+          <form id="f">
+            <div class="text-center">
+              <div class="search-box">
+                <input
+                  required
+                  id="autocomplete"
+                  type="text"
+                  name="city"
+                  class="s form-rounded p-4 shadow-sm"
+                  placeholder="Search Location"
+                  aria-label="search location"
+                />
+                <button class="btn-search text-center">search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </form>
+      <div class="card m-3 shadow-lg d-none back-card">
+        <div class="card-body">
+          <div class="pt-4 city text-center my-3">
+            <div class="city-name"><p id="city-name"></p></div>
+            <div class="country" id="country"><p></p></div>
+          </div>
+
+          <div class="icon-container text-center">
+            <img class="icon" id="icon" src="" alt="weather icon" />
+          </div>
+
+          <div class="card-mid">
+            <div class="col text-center">
+              <h3 class="temp" id="temp">-&deg;C</h3>
+            </div>
+            <div class="col text-center">
+              <p class="summary" id="summary">great weather today</p>
+            </div>
+          </div>
+
+          <div class="col text-center">
+            <div class="h-divider col-md-1"></div>
+            <div class="daynight" id="daynight"><p></p></div>
+          </div>
+
+          <div class="card-bottom px-1 py-4 row text-center">
+            <div class="col text-center">
+              <img
+                src="./icons/celsius.png"
+                class="celsius_d ii"
+                alt="celsius"
+              />
+              <p class="feels" id="feels">-&deg;C</p>
+              <span>feels like</span>
+            </div>
+            <div class="col-xs-2 v-divider"></div>
+            <div class="col text-center">
+              <img
+                src="./icons/humidity.png"
+                class="humidity_d ii"
+                alt="humidity"
+              />
+              <p class="humidity" id="humidity">-%</p>
+              <span>humidity</span>
+            </div>
+            <div class="col-xs-2 v-divider"></div>
+            <div class="col text-center">
+              <img src="./icons/wind.png" class="wind_d ii" alt="wind" />
+              <p class="wind" id="wind">-m/s</p>
+              <span>wind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <footer class="text-center" id="footer">
+      made with <span class="heart">&#10084;</span> by olugbenga
+    </footer>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!--map js-->
+  <script
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDMLxoDKNqqghRDgg1JbAvWnUNfzoE5fc&libraries=places&callback=initAutocomplete"
+    async
+    defer
+  ></script>
+  <!--end mapjs-->
+  <!--script src="js/def.js"></script-->
+  <script src="js/request.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/get_coord.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/less"></script>
+  
+</body>
