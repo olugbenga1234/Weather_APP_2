@@ -1,1 +1,2 @@
-# Weather_APP_2
+# Weather_APP
+made with Js using open weather API
